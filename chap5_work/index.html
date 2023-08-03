@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>4-1</title>
+<title>テンプレート</title>
 <link href="../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
 <link href="../_common/css/style.css" rel="stylesheet">
@@ -18,11 +18,7 @@
 <main>
 <div class="container">
 <section>
-    <form action="#" id="form">
-        <input type="text" name="word">
-        <input type="submit" value="検索">
-    </form>
-    <p id="output"></p>
+
 </section>
 </div><!-- /.container -->
 </main>
@@ -31,13 +27,5 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
-<script>
-    'use strict';
-    document.getElementById('form').onsubmit = function(event){
-        event.preventDefault();
-        const search = document.getElementById("form").word.value;
-        document.getElementById('output').textContent = `「${search}」の検索中...`;
-    };
-</script>
 </body>
 </html>

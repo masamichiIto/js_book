@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>4-1</title>
+<title>5-2</title>
 <link href="../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
 <link href="../_common/css/style.css" rel="stylesheet">
@@ -18,11 +18,14 @@
 <main>
 <div class="container">
 <section>
-    <form action="#" id="form">
-        <input type="text" name="word">
-        <input type="submit" value="検索">
+    <form id="form">
+        <select name="select">
+            <option value="./index_5-2.html">日本語</option>
+            <option value="./index-en_5-2.html">英語</option>
+            <option value="./index-zh_5-2.html">中文</option>
+        </select>
     </form>
-    <p id="output"></p>
+    <h2>English Page</h2>
 </section>
 </div><!-- /.container -->
 </main>
@@ -31,13 +34,6 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
-<script>
-    'use strict';
-    document.getElementById('form').onsubmit = function(event){
-        event.preventDefault();
-        const search = document.getElementById("form").word.value;
-        document.getElementById('output').textContent = `「${search}」の検索中...`;
-    };
-</script>
+<script src="./script.js"></script>
 </body>
 </html>
